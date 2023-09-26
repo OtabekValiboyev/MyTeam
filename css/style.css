@@ -17,7 +17,7 @@
 @font-face {
   font-family: 'Livvic';
   src: url('../fonts/Livvic-Bold.woff2') format('woff2'),
-      url('../fonts/Livvic-Bold.woff') format('woff');
+    url('../fonts/Livvic-Bold.woff') format('woff');
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -26,7 +26,7 @@
 @font-face {
   font-family: 'Livvic';
   src: url('../fonts/Livvic-Regular.woff2') format('woff2'),
-      url('../fonts/Livvic-Regular.woff') format('woff');
+    url('../fonts/Livvic-Regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -35,7 +35,7 @@
 @font-face {
   font-family: 'Livvic';
   src: url('../fonts/Livvic-SemiBold.woff2') format('woff2'),
-      url('../fonts/Livvic-SemiBold.woff') format('woff');
+    url('../fonts/Livvic-SemiBold.woff') format('woff');
   font-weight: 600;
   font-style: normal;
   font-display: swap;
@@ -84,4 +84,104 @@ img {
 
 .main-content {
   flex-grow: 1;
+}
+
+
+/* SITE-HEADER */
+.header {
+  padding-top: 73px;
+  padding-bottom: 250px;
+  background-color: var(--midnight-green);
+  background-image: url(../img/header-left-bg.png), url(../img/header-bottom-rectangle.png), url(../img/header-bottom-half-moon.png), url(../img/header-bottom-circle.png), url(../img/header-rectangle.png), url(../img/header-bottom-circle-background.png);
+  background-repeat: no-repeat;
+  background-position:  left calc(50% - 718px) top 250px, right calc(50% - 247px) bottom 56px, right calc(50% - 431px) bottom, right calc(50% - 296px) bottom, right calc(50% - 534px) bottom 57px, right calc(50% - 457px) bottom;
+}
+
+.header__top {
+  display: flex;
+  align-items: center;
+  margin-bottom: 129px;
+}
+
+.header__logo {
+  display: flex;
+  margin-right: 80px;
+}
+
+.sitenav {
+  margin-right: auto;
+}
+
+.sitenav__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+}
+
+.sitenav__item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.sitenav__link {
+  color: var(--white);
+  font-family: var(--font);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 28px;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.header__bottom {
+  display: flex;
+  align-items: flex-start;
+}
+
+.header__heading {
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 635px;
+  margin: 0;
+  margin-right: 30px;
+  font-size: 100px;
+  font-weight: 700;
+  line-height: 100px;
+}
+
+.header__heading span {
+  color: var(--light-coral);
+}
+
+.header__info {
+  flex-grow: 1;
+}
+
+.header__small-line {
+  margin: 0;
+  margin-bottom: 79px;
+  width: 50px;
+  height: 4px;
+  border: 0;
+  background-color: var(--rapture-blue);
+}
+
+.header__text {
+  font-size: 18px;
+  line-height: 28px;
+}
+
+
+/* RETINA BG */
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+  .header {
+    background-image: url(../img/header-left-bg@2x.png), url(../img/header-bottom-circle@2x.png), url(../img/header-bottom-half-moon@2x.png);
+  }
 }
