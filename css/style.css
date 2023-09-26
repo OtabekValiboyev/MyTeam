@@ -1,3 +1,47 @@
+/* CUSTOM PROPS */
+:root {
+  --midnight-green: #014E56;
+  --light-coral: #F67E7E;
+  --white: #FFF;
+  --rapture-blue: #79C8C7;
+  --police-blue: #2C6269;
+  --deep-jungle-green: #004047;
+  --sacramento-state-green: #012F34;
+  --dark-green: #002529;
+
+  --font: 'Livvic', 'Arial', sans-serif;
+}
+
+
+/* FONT-FACE */
+@font-face {
+  font-family: 'Livvic';
+  src: url('../fonts/Livvic-Bold.woff2') format('woff2'),
+      url('../fonts/Livvic-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Livvic';
+  src: url('../fonts/Livvic-Regular.woff2') format('woff2'),
+      url('../fonts/Livvic-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Livvic';
+  src: url('../fonts/Livvic-SemiBold.woff2') format('woff2'),
+      url('../fonts/Livvic-SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+
 html {
   height: 100%;
   box-sizing: border-box;
@@ -16,16 +60,17 @@ body {
   flex-direction: column;
   margin: 0;
   padding: 0;
+  font-family: var(--font);
   font-size: 16px;
   background-color: #fff;
-  color: #222;
+  color: white;
 }
 
 .container {
   width: 100%;
-  max-width: 1200px;
-  padding-left: 50px;
-  padding-right: 50px;
+  max-width: 1160px;
+  padding-left: 25px;
+  padding-right: 25px;
   margin-left: auto;
   margin-right: auto;
 }
