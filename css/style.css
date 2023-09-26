@@ -61,7 +61,9 @@ body {
   margin: 0;
   padding: 0;
   font-family: var(--font);
-  font-size: 16px;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 25px;
   background-color: #fff;
   color: white;
 }
