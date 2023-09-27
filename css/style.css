@@ -314,6 +314,81 @@ img {
 }
 
 
+/* SITE-STORIES */
+.stories {
+  position: relative;
+  z-index: 999;
+  padding-top: 140px;
+  padding-bottom: 140px;
+  background-color: var(--deep-jungle-green);
+  background-image: url(../img/header-bottom-rectangle.png), url(../img/Rectangle.jpg), url(../img/header-bottom-rectangle.png), url(../img/header-bottom-circle-background.png), url(../img/Rectangle-light.jpg), url(../img/icon-quotes.png), url(../img/icon-quotes.png), url(../img/icon-quotes.png);
+  background-repeat: no-repeat;
+  background-position: left calc(50% - 662px) top 56px, left calc(50% - 710px) top, right calc(50% - 709px) bottom, right calc(50% - 661px) bottom, right calc(50% - 709px) bottom, right calc(50% - -382px) top calc(50% - 58px), right calc(50% - -2px) top calc(50% - 58px), right calc(50% - 379px) top calc(50% - 58px);
+}
+
+.stories__heading {
+  width: 100%;
+  max-width: 932px;
+  margin-top: 0;
+  margin-bottom: 92px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px;
+}
+
+.stories__heading span {
+  color: var(--rapture-blue);
+}
+
+.stories__list {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  list-style: none;
+}
+
+.stories__item {
+  text-align: center;
+}
+
+.stories__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.stories__text {
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+
+.stories__name {
+  margin-top: 0;
+  margin-bottom: 2px;
+  color: var(--rapture-blue);
+  text-align: center;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+}
+
+.stories__subtitle {
+  margin-top: 0;
+  margin-bottom: 32px;
+  font-size: 13px;
+  font-style: italic;
+  font-weight: 500;
+  line-height: 18px;
+}
+
+.stories__img {
+  border-radius: 50%;
+}
+
+
 /* RETINA BG */
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
 only screen and (min--moz-device-pixel-ratio: 2),
@@ -323,5 +398,15 @@ only screen and (min-resolution: 192dpi),
 only screen and (min-resolution: 2dppx) {
   .header {
     background-image: url(../img/header-left-bg@2x.png), url(../img/header-bottom-circle@2x.png), url(../img/header-bottom-half-moon@2x.png), url(../img/header-bottom-circle-background@2x.png), url(../img/header-bottom-rectangle@2x.png), url(../img/header-rectangle@2x.png);
+  }
+
+  .stories {
+    background-image: url(../img/header-bottom-rectangle@2x.png), url(../img/Rectangle.jpg),
+      url(../img/header-bottom-rectangle.png),
+      url(../img/header-bottom-circle-background.png),
+      url(../img/Rectangle-light.jpg),
+      url(../img/icon-quotes.png),
+      url(../img/icon-quotes.png),
+      url(../img/icon-quotes.png);
   }
 }
