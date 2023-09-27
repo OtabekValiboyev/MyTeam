@@ -397,7 +397,7 @@ only screen and (min-device-pixel-ratio: 2),
 only screen and (min-resolution: 192dpi),
 only screen and (min-resolution: 2dppx) {
   .header {
-    background-image: url(../img/header-left-bg@2x.png), url(../img/header-bottom-circle@2x.png), url(../img/header-bottom-half-moon@2x.png), url(../img/header-bottom-circle-background@2x.png), url(../img/header-bottom-rectangle@2x.png), url(../img/header-rectangle@2x.png);
+    background-image: url(../img/header-left-bg@2x.png), url(../img/header-bottom-rectangle@2x.png), url(../img/header-bottom-half-moon@2x.png), url(../img/header-bottom-circle@2x.png), url(../img/header-rectangle@2x.png), url(../img/header-bottom-circle-background@2x.png);
   }
 
   .stories {
