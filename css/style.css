@@ -401,12 +401,12 @@ only screen and (min-resolution: 2dppx) {
   }
 
   .stories {
-    background-image: url(../img/header-bottom-rectangle@2x.png), url(../img/Rectangle.jpg),
-      url(../img/header-bottom-rectangle.png),
-      url(../img/header-bottom-circle-background.png),
-      url(../img/Rectangle-light.jpg),
-      url(../img/icon-quotes.png),
-      url(../img/icon-quotes.png),
-      url(../img/icon-quotes.png);
+    background-image: url(../img/header-bottom-rectangle@2x.png), url(../img/Rectangle@2x.jpg),
+      url(../img/header-bottom-rectangle@2x.png),
+      url(../img/header-bottom-circle-background@2x.png),
+      url(../img/Rectangle-light@2x.jpg),
+      url(../img/icon-quotes@2x.png),
+      url(../img/icon-quotes@2x.png),
+      url(../img/icon-quotes@2x.png);
   }
 }
