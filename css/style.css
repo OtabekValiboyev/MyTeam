@@ -495,6 +495,46 @@ img {
 }
 
 
+/* SITE-ABOUT-PAGE */
+.about-header {
+  padding-top: 73px;
+  padding-bottom: 120px;
+  background-color: var(--midnight-green);
+  background-image: url(../img/about-header-page-bg.png);
+  background-repeat: no-repeat;
+  background-position: right calc(50% - 730px) bottom;
+}
+
+.about-header__heading {
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 350px;
+  margin: 0;
+  margin-right: 30px;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 100px;
+}
+
+.about-header__line {
+  border: 0;
+  margin: 0;
+  width: 50px;
+  height: 4px;
+  flex-shrink: 0;
+  background-color: var(--light-coral);
+  margin-bottom: 40px;
+}
+
+.about-header__text {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 28px;
+}
+
+
+
 /* RETINA BG */
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
 only screen and (min--moz-device-pixel-ratio: 2),
@@ -518,5 +558,9 @@ only screen and (min-resolution: 2dppx) {
 
   .reg-link {
     background-image: url(../img/hero-bg-rectangles@2x.png), url(../img/reg-ling-bg-line@2x.png), url(../img/reg-ling-half-circle@2x.png), url(../img/Rectangle-light@2x.jpg);
+  }
+
+  .about-header {
+    background-image: url(../img/about-header-page-bg@2x.png);
   }
 }
