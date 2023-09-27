@@ -539,6 +539,9 @@ img {
   padding-top: 140px;
   padding-bottom: 140px;
   background-color: var(--deep-jungle-green);
+  background-image: url(../img/about-page-directors-bg.png), url(../img/header-bottom-rectangle.png), url(../img/Rectangle.jpg);
+  background-repeat: no-repeat;
+  background-position: left calc(50% + -711px) top, right calc(50% - 710px) bottom, right calc(50% - 660px) bottom;
 }
 
 .directors__heading {
@@ -554,6 +557,7 @@ img {
   margin: 0;
   padding: 0;
   display: flex;
+  align-items: flex-start;
   list-style: none;
 }
 
@@ -567,7 +571,7 @@ img {
   flex-direction: column;
   align-items: center;
   padding-top: 32px;
-  /* padding-bottom: 56px; */
+  padding-bottom: 56px;
   padding-left: 24px;
   padding-right: 24px;
   background-color: var(--sacramento-state-green);
@@ -612,21 +616,105 @@ img {
   height: 56px;
   border-radius: 50%;
   background-color: var(--light-coral);
+  cursor: pointer;
+  transition: opacity 0.4s ease,
+    background-color 0.4s ease;
+}
+
+.directors__info:hover {
+  opacity: 0.8;
+}
+
+.directors__info:active {
+  opacity: 1;
+  background-color: var(--rapture-blue);
+}
+
+.directors__info:active .directors__info-plus {
+  transform: rotate(-135deg);
 }
 
 .directors__info-plus {
   width: 16px;
   height: 16px;
   object-fit: contain;
+  transition: transform 0.4s ease;
 }
 
-.directors__name-last {}
+.directors__item-last {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  padding-top: 35px;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 64px;
+  background-color: var(--dark-green);
+}
 
-.directors__about-last {}
+.directors__name-last {
+  margin-top: 0;
+  margin-bottom: 8px;
+  width: 302px;
+  color: var(--rapture-blue);
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 28px;
+}
 
-.socials {}
+.directors__about-last {
+  width: 100%;
+  max-width: 254px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 24px;
+  color: #FFF;
+  text-align: center;
+}
 
-.socials__item {}
+.directors__socials {
+  width: 100%;
+  max-width: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0;
+}
+
+.directors__info-last {
+  position: absolute;
+  bottom: -28px;
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: var(--rapture-blue);
+  transition: opacity 0.4s ease,
+    background-color 0.4s ease;
+}
+
+.directors__info-last:hover {
+  opacity: 0.8;
+}
+
+.directors__info-last:active {
+  opacity: 1;
+  background-color: var(--light-coral);
+}
+
+.directors__info-last:active .directors__info-plus-last {
+  transform: rotate(0);
+}
+
+.directors__info-plus-last {
+  transform: rotate(-135deg);
+  transition: transform 0.4s ease;
+}
+
 
 
 /* RETINA BG */
@@ -656,5 +744,9 @@ only screen and (min-resolution: 2dppx) {
 
   .about-header {
     background-image: url(../img/about-header-page-bg@2x.png);
+  }
+
+  .directors {
+    background-image: url(../img/about-page-directors-bg@2x.png), url(../img/header-bottom-rectangle@2x.png), url(../img/Rectangle@2x.jpg);
   }
 }
