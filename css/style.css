@@ -389,6 +389,36 @@ img {
 }
 
 
+/* SITE-REGISTRATION-LINK */
+.reg-link {
+  padding-top: 76px;
+  padding-bottom: 76px;
+  background-color: var(--light-coral);
+  background-image: url(../img/hero-bg-rectangles.png), url(../img/reg-ling-bg-line.png), url(../img/reg-ling-half-circle.png), url(../img/Rectangle-light.jpg);
+  background-repeat: no-repeat;
+  background-position: left calc(50% - 732px) top 56px, left calc(50% - 709px) bottom, left calc(50% - 661px) bottom, left calc(50% - 710px) bottom;
+}
+
+.reg-lin__container {
+  width: 100%;
+  max-width: 917px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.reg-link__heading {
+  margin: 0;
+  color: var(--sacramento-state-green);
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 48px;
+}
+
+
+
 /* RETINA BG */
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
 only screen and (min--moz-device-pixel-ratio: 2),
@@ -408,5 +438,9 @@ only screen and (min-resolution: 2dppx) {
       url(../img/icon-quotes@2x.png),
       url(../img/icon-quotes@2x.png),
       url(../img/icon-quotes@2x.png);
+  }
+
+  .reg-link {
+    background-image: url(../img/hero-bg-rectangles@2x.png), url(../img/reg-ling-bg-line@2x.png), url(../img/reg-ling-half-circle@2x.png), url(../img/Rectangle-light@2x.jpg);
   }
 }
