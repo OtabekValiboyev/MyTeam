@@ -61,11 +61,13 @@ body {
   margin: 0;
   padding: 0;
   font-family: var(--font);
+  font-style: normal;
   font-weight: 600;
   font-size: 15px;
   line-height: 25px;
-  background-color: #fff;
-  color: white;
+  background-color: var(--white);
+  color: var(--white);
+  overflow-x: hidden;
 }
 
 .container {
@@ -222,6 +224,93 @@ img {
 .header__text {
   font-size: 18px;
   line-height: 28px;
+}
+
+
+/* SITE-HERO */
+.hero {
+  position: relative;
+  padding-top: 140px;
+  padding-bottom: 140px;
+  background-color: var(--sacramento-state-green);
+  background-image: url(../img/header-bottom-rectangle.png), url(../img/hero-bg-circle.png);
+  background-repeat: no-repeat;
+  background-position: right calc(50% - 710px) bottom 56px, right calc(50% - 710px) bottom;
+}
+
+.hero__bg--rectangle {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: var(--police-blue);
+  bottom: 100px;
+  right: calc(50% - 760px);
+  opacity: 0.8;
+}
+
+.hero__container {
+  display: flex;
+  align-items: flex-start;
+}
+
+.hero__left {
+  flex-shrink: 0;
+  flex-grow: 1;
+  margin-right: 125px;
+}
+
+.hero__line {
+  margin: 0;
+  border: 0;
+  margin-bottom: 54px;
+  width: 50px;
+  height: 4px;
+  background-color: var(--light-coral);
+}
+
+.hero__heading {
+  width: 100%;
+  max-width: 445px;
+  margin: 0;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 48px;
+}
+
+.hero__list {
+  padding: 0;
+  margin: 0;
+  padding-top: 58px;
+  list-style: none;
+}
+
+.hero__item {
+  display: flex;
+  align-items: flex-start;
+}
+
+.hero__item:not(last-child) {
+  margin-bottom: 32px;
+}
+
+.hero__img {
+  width: 72px;
+  height: 72px;
+  object-fit: contain;
+  margin-right: 23px;
+}
+
+.hero__title {
+  margin-top: 0;
+  margin-bottom: 16px;
+  color: var(--light-coral);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 28px;
+}
+
+.hero__description {
+  margin: 0;
 }
 
 
