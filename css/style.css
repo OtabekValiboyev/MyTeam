@@ -87,6 +87,58 @@ img {
 }
 
 
+/* BUTTONS */
+.button {
+  display: inline-block;
+  padding: 9px 33px 11px;
+  border: 2px solid var(--white);
+  border-radius: 24px;
+  background-color: transparent;
+  color: var(--white);
+  font-family: var(--font);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 28px;
+  text-decoration: none;
+  transition: opacity 0.4s ease,
+    color 0.4s ease,
+    background-color 0.4s ease,
+    border 0.4s ease;
+}
+
+.button:hover {
+  opacity: 0.8;
+}
+
+.button:active {
+  opacity: 1;
+  color: var(--dark-green);
+  background-color: var(--white);
+  border-color: var(--white);
+}
+
+.button--sacramento-state-green {
+  color: var(--sacramento-state-green);
+  border-color: var(--sacramento-state-green);
+}
+
+.button--sacramento-state-green:active {
+  color: var(--white);
+  border-color: var(--sacramento-state-green);
+  background-color: var(--sacramento-state-green);
+}
+
+.button--white {
+  color: var(--deep-jungle-green);
+  border-color: var(--white);
+  background-color: var(--white);
+}
+
+.button--white:active {
+  opacity: 0.6;
+}
+
+
 /* SITE-HEADER */
 .header {
   padding-top: 73px;
@@ -94,7 +146,7 @@ img {
   background-color: var(--midnight-green);
   background-image: url(../img/header-left-bg.png), url(../img/header-bottom-rectangle.png), url(../img/header-bottom-half-moon.png), url(../img/header-bottom-circle.png), url(../img/header-rectangle.png), url(../img/header-bottom-circle-background.png);
   background-repeat: no-repeat;
-  background-position:  left calc(50% - 718px) top 250px, right calc(50% - 247px) bottom 56px, right calc(50% - 431px) bottom, right calc(50% - 296px) bottom, right calc(50% - 534px) bottom 57px, right calc(50% - 457px) bottom;
+  background-position: left calc(50% - 718px) top 250px, right calc(50% - 247px) bottom 56px, right calc(50% - 431px) bottom, right calc(50% - 296px) bottom, right calc(50% - 534px) bottom 57px, right calc(50% - 457px) bottom;
 }
 
 .header__top {
@@ -174,13 +226,12 @@ img {
 
 
 /* RETINA BG */
-@media
-only screen and (-webkit-min-device-pixel-ratio: 2),
-only screen and (   min--moz-device-pixel-ratio: 2),
-only screen and (     -o-min-device-pixel-ratio: 2/1),
-only screen and (        min-device-pixel-ratio: 2),
-only screen and (                min-resolution: 192dpi),
-only screen and (                min-resolution: 2dppx) {
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min--moz-device-pixel-ratio: 2),
+only screen and (-o-min-device-pixel-ratio: 2/1),
+only screen and (min-device-pixel-ratio: 2),
+only screen and (min-resolution: 192dpi),
+only screen and (min-resolution: 2dppx) {
   .header {
     background-image: url(../img/header-left-bg@2x.png), url(../img/header-bottom-circle@2x.png), url(../img/header-bottom-half-moon@2x.png), url(../img/header-bottom-circle-background@2x.png), url(../img/header-bottom-rectangle@2x.png), url(../img/header-rectangle@2x.png);
   }
