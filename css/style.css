@@ -186,6 +186,17 @@ img {
   line-height: 28px;
   display: inline-block;
   text-decoration: none;
+  transition: color 0.4s ease,
+    opacity 0.4s ease;
+}
+
+.sitenav__link:hover {
+  opacity: 0.8;
+}
+
+.sitenav__link:active {
+  color: var(--light-coral);
+  opacity: 1;
 }
 
 .header__bottom {
@@ -448,8 +459,6 @@ img {
   margin: 0;
   opacity: 0.6;
 }
-
-.footer__right {}
 
 .socials {
   margin: 0;
