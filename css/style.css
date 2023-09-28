@@ -716,6 +716,49 @@ img {
 }
 
 
+/* CLIENATS */
+.clients {
+  padding-top: 140px;
+  padding-bottom: 151px;
+  background-color: var(--sacramento-state-green);
+  background-image: url(../img/header-bottom-rectangle.png), url(../img/hero-bg-rectangles.png), url(../img/clients-bg-circle.png), url(../img/Rectangle-light.jpg);
+  background-repeat: no-repeat;
+  background-position: left calc(50% - 710px) top 100px, left calc(50% - 733px) top, left calc(50% - 660px) top, calc(50% - 710px) top;
+}
+
+.clients__heading {
+  margin-top: 0;
+  margin-bottom: 70px;
+  text-align: center;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 48px;
+}
+
+.clients__list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+}
+
+.clients__item {
+  display: flex;
+}
+
+.clients__item:not(:last-child) {
+  margin-right: 80px;
+}
+
+.clients__link {
+  display: flex;
+  align-items: center;
+}
+
+.clients__img {
+  object-fit: contain;
+}
+
 
 /* RETINA BG */
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
@@ -748,5 +791,9 @@ only screen and (min-resolution: 2dppx) {
 
   .directors {
     background-image: url(../img/about-page-directors-bg@2x.png), url(../img/header-bottom-rectangle@2x.png), url(../img/Rectangle@2x.jpg);
+  }
+
+  .clients {
+    background-image: url(../img/header-bottom-rectangle@2x.png), url(../img/hero-bg-rectangles@2x.png), url(../img/clients-bg-circle@2x.png), url(../img/Rectangle-light@2x.jpg);
   }
 }
