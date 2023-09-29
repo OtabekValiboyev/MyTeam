@@ -767,7 +767,12 @@ img {
 
 .contact-header {
   padding-top: 77px;
-  padding-bottom: 77px;
+  padding-bottom: 62px;
+}
+
+.contact-header__header {
+  display: flex;
+  align-items: center;
 }
 
 
@@ -777,8 +782,6 @@ img {
   padding-top: 62px;
   padding-bottom: 120px;
 }
-
-.contact-info {}
 
 .contact-info__heading {
   margin-top: 0;
