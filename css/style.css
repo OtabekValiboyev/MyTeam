@@ -886,6 +886,20 @@ img {
   margin-bottom: 24px;
 }
 
+.form__field {
+  position: relative;
+}
+
+.input-field__error {
+  display: none;
+  transform: translate(14px, 8px);
+  color: var(--light-coral);
+  font-size: 10px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: normal;
+}
+
 .form__field:not(:last-child) {
   margin-bottom: 8px;
 }
@@ -905,11 +919,36 @@ img {
   font-weight: 600;
   line-height: 25px;
   letter-spacing: -0.115px;
+  transition: border 0.4s ease;
+}
+
+.form__input:hover {
+  border-bottom-color: var(--rapture-blue);
 }
 
 .form__textarea {
   min-height: 99px;
   resize: vertical;
+}
+
+/*
+.form__input:required:invalid {
+  border-bottom-color: red;
+} */
+
+.form__input:not(:focus):not(:placeholder-shown):invalid {
+  border-bottom-color: red;
+  color: var(--light-coral);
+}
+
+.form__input:not(:focus):not(:placeholder-shown):invalid ~ .input-field__error {
+  display: block;
+}
+
+.form__inout:focus+.validation-error,
+.form__inout:valid+.validation-error,
+.form__inout:placeholder-shown+.validation-error {
+  display: none;
 }
 
 
