@@ -772,6 +772,63 @@ img {
 
 
 
+/* CONTACT-FORM */
+.contact-form-info-wrapper {
+  padding-top: 62px;
+  padding-bottom: 120px;
+}
+
+.contact-info {}
+
+.contact-info__heading {
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 100px;
+}
+
+.contact-info__text {
+  margin-top: 0;
+  margin-bottom: 32px;
+  color: var(--light-coral);
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 48px;
+}
+
+.contact-info__list {
+  margin: 0;
+  padding: 0;
+  /* display: flex; */
+  list-style: none;
+}
+
+.contact-info__item {
+  display: flex;
+  align-items: center;
+}
+
+.contact-info__item:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.contact-info__img {
+  margin-right: 23px;
+  width: 72px;
+  height: 72px;
+  object-fit: contain;
+}
+
+.contact-info__title {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 28px;
+}
+
+
+
 /* RETINA BG */
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
 only screen and (min--moz-device-pixel-ratio: 2),
