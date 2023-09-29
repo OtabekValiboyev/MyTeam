@@ -882,13 +882,8 @@ img {
   flex-grow: 1;
 }
 
-.form {}
-
 .form__fields {
   margin-bottom: 24px;
-}
-
-.input-field {
 }
 
 .form__field:not(:last-child) {
