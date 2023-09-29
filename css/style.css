@@ -12,6 +12,10 @@
   --font: 'Livvic', 'Arial', sans-serif;
 }
 
+*:focus {
+  outline: none;
+}
+
 
 /* FONT-FACE */
 @font-face {
@@ -86,6 +90,44 @@ img {
 
 .main-content {
   flex-grow: 1;
+}
+
+
+/* PLACEHOLDER STYLES */
+::-webkit-input-placeholder {
+  /* WebKit, Blink, Edge */
+  color: var(--white);
+  opacity: 0.6;
+}
+
+:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: var(--white);
+  opacity: 0.6;
+}
+
+::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: var(--white);
+  opacity: 0.6;
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: var(--white);
+  opacity: 0.6;
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: var(--white);
+  opacity: 0.6;
+}
+
+::placeholder {
+  /* Most modern browsers support this now. */
+  color: var(--white);
+  opacity: 0.6;
 }
 
 
@@ -780,8 +822,13 @@ img {
 
 /* CONTACT-FORM */
 .contact-form-info-wrapper {
+  display: flex;
   padding-top: 62px;
   padding-bottom: 120px;
+}
+
+.contact-info {
+  margin-right: 32px;
 }
 
 .contact-info__heading {
@@ -829,6 +876,45 @@ img {
   font-size: 18px;
   font-weight: 700;
   line-height: 28px;
+}
+
+.contact-form {
+  flex-grow: 1;
+}
+
+.form {}
+
+.form__fields {
+  margin-bottom: 24px;
+}
+
+.input-field {
+}
+
+.form__field:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.form__input {
+  width: 100%;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 14px;
+  padding-right: 14px;
+  background-color: transparent;
+  border: 0;
+  border-bottom: 1px solid var(--white);
+  color: var(--white);
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 25px;
+  letter-spacing: -0.115px;
+}
+
+.form__textarea {
+  min-height: 99px;
+  resize: vertical;
 }
 
 
