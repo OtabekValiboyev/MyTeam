@@ -91,6 +91,7 @@ img {
 
 /* BUTTONS */
 .button {
+  cursor: pointer;
   display: inline-block;
   padding: 9px 33px 11px;
   border: 2px solid var(--white);
